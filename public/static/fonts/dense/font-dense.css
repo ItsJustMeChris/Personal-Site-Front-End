@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'Dense';
+    src: url('Dense-Regular.woff2') format('woff2'),
+        url('Dense-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
