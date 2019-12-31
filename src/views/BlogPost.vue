@@ -104,6 +104,7 @@ article main {
   font-size: 1.5em;
   text-align: left;
   box-shadow: 0px 2px 10px 0px #bfbfbfad;
+  line-height: 1.6em;
 }
 
 article main.night {
@@ -149,13 +150,16 @@ a.router-link-active {
 }
 
 @media only screen and (max-width: 700px) {
+  article {
+    width: 100%;
+  }
   article img {
     height: 400px;
   }
   article main {
-    width: 100%;
-    padding: 0;
     box-shadow: none;
+    width: 90%;
+    padding: 5%;
   }
   article h1 {
     font-size: 2em;
