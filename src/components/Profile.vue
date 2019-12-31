@@ -24,7 +24,7 @@ export default {
 
 <style scoped>
 .profile {
-  background: #00c9ff;
+  background: #00adff;
   display: flex;
   flex-direction: column;
   padding: 5em;
