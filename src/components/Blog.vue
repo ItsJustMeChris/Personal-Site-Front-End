@@ -87,7 +87,7 @@ export default {
   display: flex;
   margin: 1em;
   border-radius: 5px;
-  box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
   background-size: cover;
   width: 30%;
   flex-direction: column;
