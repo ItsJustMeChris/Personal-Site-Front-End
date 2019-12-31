@@ -15,7 +15,7 @@
         <h1>{{post.title}}</h1>
         <footer>
           <aside>{{post.author}}</aside>
-          <aside>{{$timeAgo(new Date(post.postTime))}}</aside>
+          <aside>{{Math.ceil(post.content.split(' ').length/200)}} min read - {{$timeAgo(new Date(post.postTime))}}</aside>
         </footer>
       </div>
     </article>
@@ -42,7 +42,7 @@ export default {
     async fetchPosts() {
       this.lastRequest = new Date();
       const posts = await (await this.$http.get(
-        `${this.$apiUrl}/blog/paginate/${this.page}`,
+        `${this.$apiUrl}/blog/paginate/${this.page}`
       )).data;
       if (posts.length > 0) {
         this.page += 1;
@@ -93,6 +93,7 @@ export default {
   flex-direction: column;
   cursor: pointer;
   transition: 0.2s;
+  justify-content: space-between;
 }
 
 .card:hover {
@@ -119,7 +120,7 @@ export default {
 .card .card-content {
   padding: 1em;
   display: flex;
-  max-height: 14em;
+  height: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
   flex-direction: column;
