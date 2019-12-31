@@ -113,7 +113,7 @@ article main.night {
 
 header {
   height: 4em;
-  background: #00c9ff;
+  background: #00adff;
   display: flex;
 }
 
