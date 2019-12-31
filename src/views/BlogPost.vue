@@ -103,13 +103,13 @@ article main {
   padding: 2em;
   font-size: 1.5em;
   text-align: left;
-  box-shadow: 0px 2px 10px 0px #bfbfbfad;
+  box-shadow: 0 1px 5px #bfbfbfad;
   line-height: 1.6em;
 }
 
 article main.night {
   background: #333333;
-  box-shadow: 0px 2px 10px 0px #000000;
+  box-shadow: 0 1px 5px #000000;
 }
 
 header {
